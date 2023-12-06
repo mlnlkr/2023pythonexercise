@@ -65,13 +65,14 @@ print('average of items in the scores list', round(total/length,5) )
 scores = [50, 55, 56, 70, 80, 60, 66]
 
 # TODO: Write your code below
-max=-100
-for x in scores:
-    if x>max:
-        max=x
+highest_score = scores[0]
 
-print('largest number in scores list is:',max)
+highest_score = scores[0]
+    for score in scores:
+        if score > highest_score:
+            highest_score = score
 
+print("Highest score:", highest_score)
 
 # 4.1.10
 
